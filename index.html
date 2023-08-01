@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Body Mass Index Calculator</title>
+</head>
+
+<body>
+
+  <section class="hero my-5">
+    <div class="container">
+      <div class="retangular"></div>
+      <div class="row hero">
+        <div class="col-md-6 p-5 m-auto">
+          <div class="wrapper-hero p-5 m-5">
+            <h1 class="display-5 fw-bold mb-4">Body Mass Index Calculator</h1>
+            <p class="text-secondary"> Better understand your weight in relation to your height using our
+              body mass index (BM) calculator. While BMI is not the sole determinant
+              of a healthy weight, it offers a valuable starting point to evaluate
+              your overall health and well-being.</p>
+          </div>
+        </div>
+        <div class="col-md-6 m-auto">
+          <div class="wrapper">
+            <form action="" method="post">
+              <h2 class="mb-5 fw-bold">Enter your details below</h2>
+              <div class="d-flex">
+                <input class="form-check-input form-check-input" type="checkbox" name="metric" id="metric">
+                <label for="metric" class="form-label mx-3">Metric</label>
+                <input class="form-check-input form-check-input" type="checkbox" name="imperial" id="imperial">
+                <label for="imperial" class="form-label mx-3">Imperial</label>
+              </div>
+              <div class="height-weight d-flex flex-row my-5 justify-content-between">
+                <div class="d-flex flex-column">
+                  <label for="Height" class="form-label">Height</label>
+                  <input type="number" name="Height" id="Height" class="form-control">
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="Weight" class="form-label">Weight</label>
+                  <input type="number" name="Weight" id="Weight" class="form-control">
+                </div>
+
+              </div>
+
+              <div class="wrapper-score d-flex justify-content-between text-light">
+                <div class="bmiresult">
+                  <p>Your BMI is... </p>
+                  <p class="score-data display-5 fw-bold">00.0</p>
+                </div>
+
+                <div class="bmidesc">
+                  <p class="score-description"> Your BMI suggests you're </p>
+                  <p class="score-data-health fw-bold"></p>
+                  <p>Your ideal weight is between</p>
+                  <p class="score-data-weight"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="bmi-result-mean py-5 my-5">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+          <img src="assets/images/image-man-eating.webp" alt="man-eating-with-chopsticks" class="img-fluid">
+
+
+        </div>
+        <div class="col-md-6">
+
+          <h1> What your BMI result means</h1>
+
+          <p>
+            A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
+            healthy weight may lower your chances of experiencing health issues later on,
+            such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
+            fat and sugar content, incorporating ample fruits and vegetables. Additionally,
+            strive for regular physical activity, ideally about 30 minutes daily for
+            five days a week.</p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <section class="cards m-5 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+
+          <img src="assets/images/icon-eating.svg" alt="" class="mb-4">
+          <h3 class="mb-4"> Healthy eating</h3>
+          <p class="card-description"> Healthy eating promotes weight control, disease prevention, better
+            digestion,
+            immunity, mental clarity, and mood.</p>
+
+        </div>
+        <div class="col-md-4">
+
+          <img src="assets/images/icon-exercise.svg" alt="" class="mb-4">
+          <h3 class="mb-4"> Regular exercise</h3>
+          <p class="card-description">
+            Exercise improves fitness, aids weight control, elevates mood, and reduces disease
+            risk, fostering wellness and longevity.
+          </p>
+
+        </div>
+        <div class="col-md-4">
+
+          <img src="assets/images/icon-sleep.svg" alt="" class="mb-4">
+          <h3 class="mb-4"> Adequate sleep</h3>
+          <p class="card-description"> Sleep enhances mental clarity, emotional stability, and physical wellness,
+            promoting
+            overall restoration and rejuvenation.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="limitationsbmi m-5 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2> Limitations of BMI</h2>
+          <p>
+            Although BMI is often a practical indicator of healthy weight, it is not suited for
+            every person. Specific groups should carefully consider their BMI outcomes, and in
+            certain cases, the measurement may not be beneficial to use.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title"> Gender</h5>
+              <p class="card-text"> The development and body fat composition of girls and boys vary with age.
+                Consequently,
+                a child's age and gender are considered when evaluating their BMI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title">Age</h5>
+              <p class="card-text">In aging individuals, increased body fat and muscle loss may cause BMI to
+                underestimate
+                body fat content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title"> Muscle</h5>
+              <p class="card-text">BMI may misclassify muscular individuals as overweight or obese, as it doesn't
+                differentiate muscle from fat.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title">Pregnancy</h5>
+              <p class="card-text">Expectant mothers experience weight gain due to their growing baby. Maintaining a
+                healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
+                and child.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title">Race</h5>
+              <p class="card-text">Certain health concerns may affect individuals of some Black and Asian origins at
+                lower BMIs than others. To learn more, it is advised to discuss this with your
+                GP or practice nurse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
